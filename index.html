@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caffè D'Autore</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="login">
+  <header class="top">
+    <div class="brand">Caffè D'Autore</div>
+    <nav><a href="#">Início</a><a href="#">Cardápio</a><a href="#login">Login</a></nav>
+  </header>
+
+  <main class="hero">
+    <div class="text">
+      <span>CAFÉ ITALIANO</span>
+      <h1>Sabores que lembram Roma.</h1>
+      <p>Experiência autêntica com café, sobremesas e um ambiente acolhedor.</p>
+      <a class="btn" href="#login">Entrar</a>
+    </div>
+    <div class="cup"></div>
+  </main>
+
+  <section class="login" id="login">
+    <div class="box">
+      <h2>Login</h2>
+      <div class="row">
+        <label class="opt"><input type="radio" name="tipo" value="cliente" checked> Cliente</label>
+        <label class="opt"><input type="radio" name="tipo" value="func"> Funcionário</label>
+        <label class="opt"><input type="radio" name="tipo" value="adm"> Administrador</label>
+      </div>
+
+      <form id="clienteForm" class="role-panel active">
+        <input name="nome" placeholder="Nome completo">
+        <input name="nascimento" type="date">
+        <input name="celular" placeholder="Número de celular">
+        <input name="email" type="email" placeholder="Email para verificação">
+        <input name="apelido" placeholder="Apelido">
+        <button type="submit">Entrar</button>
+      </form>
+
+      <form id="funcForm" class="role-panel">
+        <input name="cracha" type="text" inputmode="numeric" maxlength="5" pattern="\d{1,5}" placeholder="Número do crachá">
+        <input name="nome" placeholder="Nome completo">
+        <button type="submit">Entrar</button>
+      </form>
+
+      <form id="admForm" class="role-panel">
+        <input name="nome" placeholder="Nome completo">
+        <input name="senha" type="password" placeholder="Senha secreta">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
