@@ -6,54 +6,27 @@
   <title>Caffè D'Autore</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="login">
+<body class="welcome-page">
   <header class="top">
     <div class="brand">Caffè D'Autore</div>
-    <nav><a href="#">Início</a><a href="#">Cardápio</a><a href="#login">Login</a></nav>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="pages/sobre.html">Sobre nós</a>
+      <a href="pages/como-fazemos.html">Como é feito nosso café</a>
+      <a href="pages/login.html">Login</a>
+    </nav>
   </header>
 
-  <main class="hero">
-    <div class="text">
-      <span>CAFÉ ITALIANO</span>
-      <h1>Sabores que lembram Roma.</h1>
-      <p>Experiência autêntica com café, sobremesas e um ambiente acolhedor.</p>
-      <a class="btn" href="#login">Entrar</a>
-    </div>
-    <div class="cup"></div>
-  </main>
-
-  <section class="login" id="login">
-    <div class="box">
-      <h2>Login</h2>
-      <div class="row">
-        <label class="opt"><input type="radio" name="tipo" value="cliente" checked> Cliente</label>
-        <label class="opt"><input type="radio" name="tipo" value="func"> Funcionário</label>
-        <label class="opt"><input type="radio" name="tipo" value="adm"> Administrador</label>
+  <main class="welcome-screen">
+    <div class="welcome-card">
+      <img src="https://italycaffe.com.br/imagens/lg1.png" alt="Café Italiano">
+      <div class="welcome-mark">
+        <span class="italy">ITALY</span>
+        <span class="cafe-script">Caffè</span>
       </div>
-
-      <form id="clienteForm" class="role-panel active">
-        <input name="nome" placeholder="Nome completo">
-        <input name="nascimento" type="date">
-        <input name="celular" placeholder="Número de celular">
-        <input name="email" type="email" placeholder="Email para verificação">
-        <input name="apelido" placeholder="Apelido">
-        <button type="submit">Entrar</button>
-      </form>
-
-      <form id="funcForm" class="role-panel">
-        <input name="cracha" type="text" inputmode="numeric" maxlength="5" pattern="\d{1,5}" placeholder="Número do crachá">
-        <input name="nome" placeholder="Nome completo">
-        <button type="submit">Entrar</button>
-      </form>
-
-      <form id="admForm" class="role-panel">
-        <input name="nome" placeholder="Nome completo">
-        <input name="senha" type="password" placeholder="Senha secreta">
-        <button type="submit">Entrar</button>
-      </form>
+      <h1>Bem-vindo</h1>
     </div>
-  </section>
-
-  <script src="assets/js/main.js"></script>
+    <a class="welcome-btn" href="pages/login.html"><span>Entrar</span><i>→</i></a>
+  </main>
 </body>
 </html>
